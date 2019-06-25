@@ -28,5 +28,10 @@ namespace SampleCompanyHRSystem
                 ExceptionHandler.throwException(ex);
             }
         }
+
+        private void mnuItemAddAnEmployee_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

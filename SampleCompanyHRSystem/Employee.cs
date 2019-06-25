@@ -8,12 +8,12 @@ namespace SampleCompanyHRSystem
 {
     class Employee
     {
-        int employeeNo;
+        int employeeID;
         String title;
         String surname;
         String forename1;
-        String forename2;
-        Char[] initials = new char[5];
+        String middleName;
+        String initials;
         String knownAs;
         String address1;
         String address2;
@@ -25,53 +25,26 @@ namespace SampleCompanyHRSystem
         String personalEmail;
         String ethnicOrigin;
         String nationality;
-        int equalityCommisionIdentifier;
         String martialStatus;
         String sex;
-        String nationalInsuranceNumber;
         Boolean disabled;
         String disabilityRegNo;
         DateTime dateOfBirth;
+        Boolean eligibleToWorkInUK;
+        String workPermitNo;
+        DateTime workPermitDate;
+        String passportNumber;
+        Boolean statementOfEmploymentRequired;
+        String equalityCommisionIdentifier;
+        String nationalInsuranceNumber;
         DateTime expectedToRetire;
         String carRegNo;
         String drivingLicenseNo;
         DateTime drivingLicenseDate;
-        DateTime employmentStartedOn;
-        DateTime employmentEndedOn;
-        String employmentType;
-        String jobTitle;
-        int grade;
-        String onHold;
         String employmentTelephone;
         String employmentMobile;
         String employmentEmail;
-        String payFrequency;
-        String payMethod;
-        String taxCode;
-        int contractedHours;
-        double salary;
-        String bankName;
-        String bankAddress1;
-        String bankAddress2;
-        String bankTown;
-        String bankCounty;
-        String bankPostcode;
-        String bankTelephone;
-        String bankAccountType;
-        String bankNumber;
-        String bankSortCode;
-        String bankAccountName;  
-        Boolean eligibleToWorkInUK;
-        String passportNumber;
-        String workPermitNo;
-        DateTime workPermitDate;
-        Boolean statementOfEmploymentRequired;
-        String noticePeriod;
-        String noticePeriodNotes;
-        String noOfTimesSSP;
-        String sspNotes;
-        int workHoursPerDay;
-        String workNotes;
+        int bankNo;
 
     }
 }

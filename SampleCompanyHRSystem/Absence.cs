@@ -8,10 +8,11 @@ namespace SampleCompanyHRSystem
 {
     class Absence
     {
-        int employeeNo;
+        int absenceID;
         String absenceType;
         String absenceReason;
         String absenceNotes;
+        Boolean ssp;
         Boolean workRelatedAccident;
         Boolean doctorsNote;
         DateTime doctorsNoteExpiresOn;

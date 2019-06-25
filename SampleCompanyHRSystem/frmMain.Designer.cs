@@ -37,6 +37,7 @@
             this.mnuItemEmployee = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemSearchForAnEmployee = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemAddAnEmployee = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuItemAddSickness = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemProcessEmployeeAsLeaver = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemAnnualLeave = new System.Windows.Forms.ToolStripMenuItem();
             this.viewAnnualLeaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +54,7 @@
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuItemAddSickness = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuItemEqualityComission = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +65,7 @@
             this.mnuItemEmployee,
             this.mnuItemService,
             this.mnuItemTraining,
+            this.mnuItemEqualityComission,
             this.mnuItemReport});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
@@ -122,6 +124,13 @@
             this.mnuItemAddAnEmployee.Name = "mnuItemAddAnEmployee";
             this.mnuItemAddAnEmployee.Size = new System.Drawing.Size(220, 22);
             this.mnuItemAddAnEmployee.Text = "Add an Employee";
+            this.mnuItemAddAnEmployee.Click += new System.EventHandler(this.mnuItemAddAnEmployee_Click);
+            // 
+            // mnuItemAddSickness
+            // 
+            this.mnuItemAddSickness.Name = "mnuItemAddSickness";
+            this.mnuItemAddSickness.Size = new System.Drawing.Size(220, 22);
+            this.mnuItemAddSickness.Text = "Add Sickness";
             // 
             // mnuItemProcessEmployeeAsLeaver
             // 
@@ -234,11 +243,11 @@
             this.trainingToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.trainingToolStripMenuItem.Text = "Training";
             // 
-            // mnuItemAddSickness
+            // mnuItemEqualityComission
             // 
-            this.mnuItemAddSickness.Name = "mnuItemAddSickness";
-            this.mnuItemAddSickness.Size = new System.Drawing.Size(220, 22);
-            this.mnuItemAddSickness.Text = "Add Sickness";
+            this.mnuItemEqualityComission.Name = "mnuItemEqualityComission";
+            this.mnuItemEqualityComission.Size = new System.Drawing.Size(131, 20);
+            this.mnuItemEqualityComission.Text = "Equality Commission";
             // 
             // frmMain
             // 
@@ -283,5 +292,6 @@
         private System.Windows.Forms.ToolStripMenuItem serviceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trainingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuItemAddSickness;
+        private System.Windows.Forms.ToolStripMenuItem mnuItemEqualityComission;
     }
 }
