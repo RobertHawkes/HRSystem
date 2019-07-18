@@ -43,18 +43,18 @@
             this.viewAnnualLeaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addAnnualLeaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemService = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuItemSearchForAService = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuItemViewService = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemAssignEmployeeToService = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemAddAService = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemTraining = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemViewTrainingRecords = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemAddTrainingDate = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemRecordTrainingAttendance = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuItemEqualityComission = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemReport = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuItemEqualityComission = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,6 +118,7 @@
             this.mnuItemSearchForAnEmployee.Name = "mnuItemSearchForAnEmployee";
             this.mnuItemSearchForAnEmployee.Size = new System.Drawing.Size(220, 22);
             this.mnuItemSearchForAnEmployee.Text = "View Employees";
+            this.mnuItemSearchForAnEmployee.Click += new System.EventHandler(this.MnuItemSearchForAnEmployee_Click);
             // 
             // mnuItemAddAnEmployee
             // 
@@ -131,12 +132,14 @@
             this.mnuItemAddSickness.Name = "mnuItemAddSickness";
             this.mnuItemAddSickness.Size = new System.Drawing.Size(220, 22);
             this.mnuItemAddSickness.Text = "Add Sickness";
+            this.mnuItemAddSickness.Click += new System.EventHandler(this.MnuItemAddSickness_Click);
             // 
             // mnuItemProcessEmployeeAsLeaver
             // 
             this.mnuItemProcessEmployeeAsLeaver.Name = "mnuItemProcessEmployeeAsLeaver";
             this.mnuItemProcessEmployeeAsLeaver.Size = new System.Drawing.Size(220, 22);
             this.mnuItemProcessEmployeeAsLeaver.Text = "Process Employee as Leaver";
+            this.mnuItemProcessEmployeeAsLeaver.Click += new System.EventHandler(this.MnuItemProcessEmployeeAsLeaver_Click);
             // 
             // mnuItemAnnualLeave
             // 
@@ -150,42 +153,47 @@
             // viewAnnualLeaveToolStripMenuItem
             // 
             this.viewAnnualLeaveToolStripMenuItem.Name = "viewAnnualLeaveToolStripMenuItem";
-            this.viewAnnualLeaveToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.viewAnnualLeaveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewAnnualLeaveToolStripMenuItem.Text = "View Annual Leave";
+            this.viewAnnualLeaveToolStripMenuItem.Click += new System.EventHandler(this.ViewAnnualLeaveToolStripMenuItem_Click);
             // 
             // addAnnualLeaveToolStripMenuItem
             // 
             this.addAnnualLeaveToolStripMenuItem.Name = "addAnnualLeaveToolStripMenuItem";
-            this.addAnnualLeaveToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.addAnnualLeaveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addAnnualLeaveToolStripMenuItem.Text = "Add Annual Leave";
+            this.addAnnualLeaveToolStripMenuItem.Click += new System.EventHandler(this.AddAnnualLeaveToolStripMenuItem_Click);
             // 
             // mnuItemService
             // 
             this.mnuItemService.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuItemSearchForAService,
+            this.mnuItemViewService,
             this.mnuItemAssignEmployeeToService,
             this.mnuItemAddAService});
             this.mnuItemService.Name = "mnuItemService";
             this.mnuItemService.Size = new System.Drawing.Size(56, 20);
             this.mnuItemService.Text = "Service";
             // 
-            // mnuItemSearchForAService
+            // mnuItemViewService
             // 
-            this.mnuItemSearchForAService.Name = "mnuItemSearchForAService";
-            this.mnuItemSearchForAService.Size = new System.Drawing.Size(218, 22);
-            this.mnuItemSearchForAService.Text = "View Services";
+            this.mnuItemViewService.Name = "mnuItemViewService";
+            this.mnuItemViewService.Size = new System.Drawing.Size(218, 22);
+            this.mnuItemViewService.Text = "View Services";
+            this.mnuItemViewService.Click += new System.EventHandler(this.MnuItemViewService_Click);
             // 
             // mnuItemAssignEmployeeToService
             // 
             this.mnuItemAssignEmployeeToService.Name = "mnuItemAssignEmployeeToService";
             this.mnuItemAssignEmployeeToService.Size = new System.Drawing.Size(218, 22);
             this.mnuItemAssignEmployeeToService.Text = "Assign Employee to Service";
+            this.mnuItemAssignEmployeeToService.Click += new System.EventHandler(this.MnuItemAssignEmployeeToService_Click);
             // 
             // mnuItemAddAService
             // 
             this.mnuItemAddAService.Name = "mnuItemAddAService";
             this.mnuItemAddAService.Size = new System.Drawing.Size(218, 22);
             this.mnuItemAddAService.Text = "Add a Service";
+            this.mnuItemAddAService.Click += new System.EventHandler(this.MnuItemAddAService_Click);
             // 
             // mnuItemTraining
             // 
@@ -194,26 +202,33 @@
             this.mnuItemAddTrainingDate,
             this.mnuItemRecordTrainingAttendance});
             this.mnuItemTraining.Name = "mnuItemTraining";
-            this.mnuItemTraining.Size = new System.Drawing.Size(62, 20);
+            this.mnuItemTraining.Size = new System.Drawing.Size(61, 20);
             this.mnuItemTraining.Text = "Training";
             // 
             // mnuItemViewTrainingRecords
             // 
             this.mnuItemViewTrainingRecords.Name = "mnuItemViewTrainingRecords";
-            this.mnuItemViewTrainingRecords.Size = new System.Drawing.Size(219, 22);
+            this.mnuItemViewTrainingRecords.Size = new System.Drawing.Size(218, 22);
             this.mnuItemViewTrainingRecords.Text = "View Training records";
+            this.mnuItemViewTrainingRecords.Click += new System.EventHandler(this.MnuItemViewTrainingRecords_Click);
             // 
             // mnuItemAddTrainingDate
             // 
             this.mnuItemAddTrainingDate.Name = "mnuItemAddTrainingDate";
-            this.mnuItemAddTrainingDate.Size = new System.Drawing.Size(219, 22);
+            this.mnuItemAddTrainingDate.Size = new System.Drawing.Size(218, 22);
             this.mnuItemAddTrainingDate.Text = "Add Training date";
             // 
             // mnuItemRecordTrainingAttendance
             // 
             this.mnuItemRecordTrainingAttendance.Name = "mnuItemRecordTrainingAttendance";
-            this.mnuItemRecordTrainingAttendance.Size = new System.Drawing.Size(219, 22);
+            this.mnuItemRecordTrainingAttendance.Size = new System.Drawing.Size(218, 22);
             this.mnuItemRecordTrainingAttendance.Text = "Record Training attendance";
+            // 
+            // mnuItemEqualityComission
+            // 
+            this.mnuItemEqualityComission.Name = "mnuItemEqualityComission";
+            this.mnuItemEqualityComission.Size = new System.Drawing.Size(131, 20);
+            this.mnuItemEqualityComission.Text = "Equality Commission";
             // 
             // mnuItemReport
             // 
@@ -242,12 +257,6 @@
             this.trainingToolStripMenuItem.Name = "trainingToolStripMenuItem";
             this.trainingToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.trainingToolStripMenuItem.Text = "Training";
-            // 
-            // mnuItemEqualityComission
-            // 
-            this.mnuItemEqualityComission.Name = "mnuItemEqualityComission";
-            this.mnuItemEqualityComission.Size = new System.Drawing.Size(131, 20);
-            this.mnuItemEqualityComission.Text = "Equality Commission";
             // 
             // frmMain
             // 
@@ -278,7 +287,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuItemAnnualLeave;
         private System.Windows.Forms.ToolStripMenuItem viewAnnualLeaveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addAnnualLeaveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnuItemSearchForAService;
+        private System.Windows.Forms.ToolStripMenuItem mnuItemViewService;
         private System.Windows.Forms.ToolStripMenuItem mnuItemAssignEmployeeToService;
         private System.Windows.Forms.ToolStripMenuItem mnuItemAddAService;
         private System.Windows.Forms.ToolStripMenuItem mnuItemViewTrainingRecords;

@@ -18,6 +18,8 @@ namespace SampleCompanyHRSystem
         String taxCode;
         String payMethod;
 
+        //Boolean statementOfEmploymentRequired; //Should be moved into Contract
+
         int jobPositionID;
 
     }

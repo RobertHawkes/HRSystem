@@ -31,7 +31,122 @@ namespace SampleCompanyHRSystem
 
         private void mnuItemAddAnEmployee_Click(object sender, EventArgs e)
         {
+            try
+            {
+                FormHandler.showAddEmployee();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
 
+        private void MnuItemSearchForAnEmployee_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.showViewEmployee();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void MnuItemAddSickness_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.showAddSickness();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void MnuItemProcessEmployeeAsLeaver_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.showEmployeeLeaver();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void ViewAnnualLeaveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.showViewAnnualLeave();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void AddAnnualLeaveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.showAddAnnualLeave();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void MnuItemViewService_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.showViewService();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void MnuItemAssignEmployeeToService_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.showAssignEmployeeToService();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void MnuItemAddAService_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.showAddService();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void MnuItemViewTrainingRecords_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.showViewTraining();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
         }
     }
 }

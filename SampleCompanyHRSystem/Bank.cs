@@ -17,7 +17,7 @@ namespace SampleCompanyHRSystem
         String bankPostcode;
         String bankTelephone;
         String bankAccountType;
-        String bankNumber;
+        String bankAccountNumber;
         String bankSortCode;
         String bankAccountName;
     }
