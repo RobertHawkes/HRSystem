@@ -8,18 +8,20 @@ namespace SampleCompanyHRSystem
 {
     class User
     {
+        int userID;
         string username;
         string firstname;
         string surname;
         DateTime lastPasswordChange;
         int permissions;
 
-        //0000 - support worker
+        //00000 - support worker
 
         //first digit - HR permission level
         //second digit - Finance permission level
         //third digit - Learning and Development permission level
         //fourth digit - IT permission level
+        //fifth digit - Roaming profile - 0/1
 
         /*
          * 0 - can view own records - support worker

@@ -46,6 +46,9 @@
             this.mnuItemViewService = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemAssignEmployeeToService = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemAddAService = new System.Windows.Forms.ToolStripMenuItem();
+            this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewAreasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemTraining = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemViewTrainingRecords = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemAddTrainingDate = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +58,9 @@
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviceUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewServiceUsersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.addServiceUserToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,8 +70,10 @@
             this.mnuItemUser,
             this.mnuItemEmployee,
             this.mnuItemService,
+            this.areaToolStripMenuItem,
             this.mnuItemTraining,
             this.mnuItemEqualityComission,
+            this.serviceUserToolStripMenuItem,
             this.mnuItemReport});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
@@ -85,21 +93,21 @@
             // mnuItemLogin
             // 
             this.mnuItemLogin.Name = "mnuItemLogin";
-            this.mnuItemLogin.Size = new System.Drawing.Size(180, 22);
+            this.mnuItemLogin.Size = new System.Drawing.Size(115, 22);
             this.mnuItemLogin.Text = "Login";
             this.mnuItemLogin.Click += new System.EventHandler(this.mnuItemLogin_Click);
             // 
             // mnuItemLogout
             // 
             this.mnuItemLogout.Name = "mnuItemLogout";
-            this.mnuItemLogout.Size = new System.Drawing.Size(180, 22);
+            this.mnuItemLogout.Size = new System.Drawing.Size(115, 22);
             this.mnuItemLogout.Text = "Log out";
             this.mnuItemLogout.Click += new System.EventHandler(this.mnuItemLogout_Click);
             // 
             // mnuItemQuit
             // 
             this.mnuItemQuit.Name = "mnuItemQuit";
-            this.mnuItemQuit.Size = new System.Drawing.Size(180, 22);
+            this.mnuItemQuit.Size = new System.Drawing.Size(115, 22);
             this.mnuItemQuit.Text = "Quit";
             this.mnuItemQuit.Click += new System.EventHandler(this.mnuItemQuit_Click);
             // 
@@ -155,14 +163,14 @@
             // viewAnnualLeaveToolStripMenuItem
             // 
             this.viewAnnualLeaveToolStripMenuItem.Name = "viewAnnualLeaveToolStripMenuItem";
-            this.viewAnnualLeaveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewAnnualLeaveToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.viewAnnualLeaveToolStripMenuItem.Text = "View Annual Leave";
             this.viewAnnualLeaveToolStripMenuItem.Click += new System.EventHandler(this.ViewAnnualLeaveToolStripMenuItem_Click);
             // 
             // addAnnualLeaveToolStripMenuItem
             // 
             this.addAnnualLeaveToolStripMenuItem.Name = "addAnnualLeaveToolStripMenuItem";
-            this.addAnnualLeaveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addAnnualLeaveToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.addAnnualLeaveToolStripMenuItem.Text = "Add Annual Leave";
             this.addAnnualLeaveToolStripMenuItem.Click += new System.EventHandler(this.AddAnnualLeaveToolStripMenuItem_Click);
             // 
@@ -196,6 +204,27 @@
             this.mnuItemAddAService.Size = new System.Drawing.Size(218, 22);
             this.mnuItemAddAService.Text = "Add a Service";
             this.mnuItemAddAService.Click += new System.EventHandler(this.MnuItemAddAService_Click);
+            // 
+            // areaToolStripMenuItem
+            // 
+            this.areaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewAreasToolStripMenuItem,
+            this.editServicesToolStripMenuItem});
+            this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
+            this.areaToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.areaToolStripMenuItem.Text = "Area";
+            // 
+            // viewAreasToolStripMenuItem
+            // 
+            this.viewAreasToolStripMenuItem.Name = "viewAreasToolStripMenuItem";
+            this.viewAreasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewAreasToolStripMenuItem.Text = "View Areas";
+            // 
+            // editServicesToolStripMenuItem
+            // 
+            this.editServicesToolStripMenuItem.Name = "editServicesToolStripMenuItem";
+            this.editServicesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editServicesToolStripMenuItem.Text = "Edit Services";
             // 
             // mnuItemTraining
             // 
@@ -262,6 +291,27 @@
             this.trainingToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.trainingToolStripMenuItem.Text = "Training";
             // 
+            // serviceUserToolStripMenuItem
+            // 
+            this.serviceUserToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewServiceUsersToolStripMenuItem1,
+            this.addServiceUserToolStripMenuItem1});
+            this.serviceUserToolStripMenuItem.Name = "serviceUserToolStripMenuItem";
+            this.serviceUserToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.serviceUserToolStripMenuItem.Text = "Service User";
+            // 
+            // viewServiceUsersToolStripMenuItem1
+            // 
+            this.viewServiceUsersToolStripMenuItem1.Name = "viewServiceUsersToolStripMenuItem1";
+            this.viewServiceUsersToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.viewServiceUsersToolStripMenuItem1.Text = "View Service Users";
+            // 
+            // addServiceUserToolStripMenuItem1
+            // 
+            this.addServiceUserToolStripMenuItem1.Name = "addServiceUserToolStripMenuItem1";
+            this.addServiceUserToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.addServiceUserToolStripMenuItem1.Text = "Add Service User";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,5 +356,11 @@
         private System.Windows.Forms.ToolStripMenuItem trainingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuItemAddSickness;
         private System.Windows.Forms.ToolStripMenuItem mnuItemEqualityComission;
+        private System.Windows.Forms.ToolStripMenuItem areaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewAreasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editServicesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem serviceUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewServiceUsersToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem addServiceUserToolStripMenuItem1;
     }
 }

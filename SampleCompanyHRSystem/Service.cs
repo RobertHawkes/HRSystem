@@ -8,5 +8,12 @@ namespace SampleCompanyHRSystem
 {
     class Service
     {
+        List<Employee> employees = new List<Employee>();
+        List<ServiceUser> serviceUser = new List<ServiceUser>();
+        String address1;
+        String address2;
+        String postCode;
+        Employee houseManager = new Employee();
+
     }
 }

@@ -52,8 +52,10 @@
   <ItemGroup>
     <Compile Include="Absence.cs" />
     <Compile Include="Appraisal.cs" />
+    <Compile Include="Area.cs" />
     <Compile Include="Bank.cs" />
     <Compile Include="Contract.cs" />
+    <Compile Include="DatabaseHandler.cs" />
     <Compile Include="Disciplinary.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="ExceptionHandler.cs" />
@@ -147,6 +149,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Qualification.cs" />
     <Compile Include="Service.cs" />
+    <Compile Include="ServiceUser.cs" />
     <Compile Include="Training.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserHandler.cs" />
