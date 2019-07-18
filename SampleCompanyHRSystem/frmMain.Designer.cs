@@ -94,12 +94,14 @@
             this.mnuItemLogout.Name = "mnuItemLogout";
             this.mnuItemLogout.Size = new System.Drawing.Size(180, 22);
             this.mnuItemLogout.Text = "Log out";
+            this.mnuItemLogout.Click += new System.EventHandler(this.mnuItemLogout_Click);
             // 
             // mnuItemQuit
             // 
             this.mnuItemQuit.Name = "mnuItemQuit";
             this.mnuItemQuit.Size = new System.Drawing.Size(180, 22);
             this.mnuItemQuit.Text = "Quit";
+            this.mnuItemQuit.Click += new System.EventHandler(this.mnuItemQuit_Click);
             // 
             // mnuItemEmployee
             // 
@@ -202,27 +204,29 @@
             this.mnuItemAddTrainingDate,
             this.mnuItemRecordTrainingAttendance});
             this.mnuItemTraining.Name = "mnuItemTraining";
-            this.mnuItemTraining.Size = new System.Drawing.Size(61, 20);
+            this.mnuItemTraining.Size = new System.Drawing.Size(62, 20);
             this.mnuItemTraining.Text = "Training";
             // 
             // mnuItemViewTrainingRecords
             // 
             this.mnuItemViewTrainingRecords.Name = "mnuItemViewTrainingRecords";
-            this.mnuItemViewTrainingRecords.Size = new System.Drawing.Size(218, 22);
+            this.mnuItemViewTrainingRecords.Size = new System.Drawing.Size(219, 22);
             this.mnuItemViewTrainingRecords.Text = "View Training records";
             this.mnuItemViewTrainingRecords.Click += new System.EventHandler(this.MnuItemViewTrainingRecords_Click);
             // 
             // mnuItemAddTrainingDate
             // 
             this.mnuItemAddTrainingDate.Name = "mnuItemAddTrainingDate";
-            this.mnuItemAddTrainingDate.Size = new System.Drawing.Size(218, 22);
+            this.mnuItemAddTrainingDate.Size = new System.Drawing.Size(219, 22);
             this.mnuItemAddTrainingDate.Text = "Add Training date";
+            this.mnuItemAddTrainingDate.Click += new System.EventHandler(this.mnuItemAddTrainingDate_Click);
             // 
             // mnuItemRecordTrainingAttendance
             // 
             this.mnuItemRecordTrainingAttendance.Name = "mnuItemRecordTrainingAttendance";
-            this.mnuItemRecordTrainingAttendance.Size = new System.Drawing.Size(218, 22);
+            this.mnuItemRecordTrainingAttendance.Size = new System.Drawing.Size(219, 22);
             this.mnuItemRecordTrainingAttendance.Text = "Record Training attendance";
+            this.mnuItemRecordTrainingAttendance.Click += new System.EventHandler(this.mnuItemRecordTrainingAttendance_Click);
             // 
             // mnuItemEqualityComission
             // 

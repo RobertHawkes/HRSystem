@@ -100,6 +100,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogout.Designer.cs">
+      <DependentUpon>frmLogout.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,8 @@
     <Compile Include="Qualification.cs" />
     <Compile Include="Service.cs" />
     <Compile Include="Training.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserHandler.cs" />
     <EmbeddedResource Include="frmAddService.resx">
       <DependentUpon>frmAddService.cs</DependentUpon>
     </EmbeddedResource>

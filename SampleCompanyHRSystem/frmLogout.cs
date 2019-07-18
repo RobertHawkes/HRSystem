@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SampleCompanyHRSystem
 {
-    public partial class frmEmployeeLeaver : Form
+    public partial class frmLogout : Form
     {
-        public frmEmployeeLeaver()
+        public frmLogout()
         {
             InitializeComponent();
-        }
-
-        private void frmEmployeeLeaver_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            FormHandler.hideEmployeeLeaver();
         }
     }
 }

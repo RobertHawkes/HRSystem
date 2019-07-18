@@ -21,7 +21,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showLoginForm();
+                FormHandler.openLogin();
             }
             catch (Exception ex)
             {
@@ -33,7 +33,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showAddEmployee();
+                FormHandler.openAddEmployee();
             }
             catch (Exception ex)
             {
@@ -45,7 +45,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showViewEmployee();
+                FormHandler.openViewEmployee();
             }
             catch (Exception ex)
             {
@@ -57,7 +57,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showAddSickness();
+                FormHandler.openAddSickness();
             }
             catch (Exception ex)
             {
@@ -69,7 +69,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showEmployeeLeaver();
+                FormHandler.openEmployeeLeaver();
             }
             catch (Exception ex)
             {
@@ -81,7 +81,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showViewAnnualLeave();
+                FormHandler.openViewAnnualLeave();
             }
             catch (Exception ex)
             {
@@ -93,7 +93,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showAddAnnualLeave();
+                FormHandler.openAddAnnualLeave();
             }
             catch (Exception ex)
             {
@@ -105,7 +105,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showViewService();
+                FormHandler.openViewService();
             }
             catch (Exception ex)
             {
@@ -117,7 +117,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showAssignEmployeeToService();
+                FormHandler.openAssignEmployeeToService();
             }
             catch (Exception ex)
             {
@@ -129,7 +129,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showAddService();
+                FormHandler.openAddService();
             }
             catch (Exception ex)
             {
@@ -141,7 +141,55 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.showViewTraining();
+                FormHandler.openViewTraining();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void mnuItemLogout_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.openLogout();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void mnuItemQuit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                UserHandler.logout();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void mnuItemAddTrainingDate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.openAddTraining();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void mnuItemRecordTrainingAttendance_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.openRecordTrainingAttendance();
             }
             catch (Exception ex)
             {
