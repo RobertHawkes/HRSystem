@@ -23,7 +23,8 @@ namespace SampleCompanyHRSystem
             }
             else
             {
-                FormHandler.showMainForm();
+                FormHandler.openMain();
+                this.Hide();
                 timerSplash.Stop();
             }
         }

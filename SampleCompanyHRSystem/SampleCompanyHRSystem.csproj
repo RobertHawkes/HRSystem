@@ -36,7 +36,6 @@
     <ApplicationIcon>HRIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,12 +58,19 @@
     <Compile Include="Disciplinary.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="ExceptionHandler.cs" />
+    <Compile Include="Filter.cs" />
     <Compile Include="FormHandler.cs" />
     <Compile Include="frmAddAnnualLeave.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAddAnnualLeave.Designer.cs">
       <DependentUpon>frmAddAnnualLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddQualification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddQualification.Designer.cs">
+      <DependentUpon>frmAddQualification.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAddService.cs">
       <SubType>Form</SubType>
@@ -84,17 +90,41 @@
     <Compile Include="frmAddSickness.Designer.cs">
       <DependentUpon>frmAddSickness.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddTraining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddTraining.Designer.cs">
+      <DependentUpon>frmAddTraining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddTrainingAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddTrainingAttendance.Designer.cs">
+      <DependentUpon>frmAddTrainingAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAssignEmployeeToService.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAssignEmployeeToService.Designer.cs">
       <DependentUpon>frmAssignEmployeeToService.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEmployeeLeaver.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEmployeeLeaver.Designer.cs">
       <DependentUpon>frmEmployeeLeaver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgotPassword.Designer.cs">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -107,6 +137,12 @@
     </Compile>
     <Compile Include="frmLogout.Designer.cs">
       <DependentUpon>frmLogout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmService.Designer.cs">
+      <DependentUpon>frmService.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
@@ -132,6 +168,12 @@
     <Compile Include="frmViewEmployee.Designer.cs">
       <DependentUpon>frmViewEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmViewFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewFilter.Designer.cs">
+      <DependentUpon>frmViewFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmViewService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +195,12 @@
     <Compile Include="Training.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserHandler.cs" />
+    <EmbeddedResource Include="frmAddAnnualLeave.resx">
+      <DependentUpon>frmAddAnnualLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddQualification.resx">
+      <DependentUpon>frmAddQualification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddService.resx">
       <DependentUpon>frmAddService.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,17 +210,35 @@
     <EmbeddedResource Include="frmAddSickness.resx">
       <DependentUpon>frmAddSickness.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddTraining.resx">
+      <DependentUpon>frmAddTraining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddTrainingAttendance.resx">
+      <DependentUpon>frmAddTrainingAttendance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAssignEmployeeToService.resx">
       <DependentUpon>frmAssignEmployeeToService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeLeaver.resx">
       <DependentUpon>frmEmployeeLeaver.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmForgotPassword.resx">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogout.resx">
+      <DependentUpon>frmLogout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmService.resx">
+      <DependentUpon>frmService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
@@ -182,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewEmployee.resx">
       <DependentUpon>frmViewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewFilter.resx">
+      <DependentUpon>frmViewFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewService.resx">
       <DependentUpon>frmViewService.cs</DependentUpon>

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SampleCompanyHRSystem
 {
-    public partial class frmLogin : Form
+    public partial class frmAddTrainingAttendance : Form
     {
-        public frmLogin()
+        public frmAddTrainingAttendance()
         {
             InitializeComponent();
-        }
-
-        private void LlblForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            FormHandler.openForgotPassword();
         }
     }
 }

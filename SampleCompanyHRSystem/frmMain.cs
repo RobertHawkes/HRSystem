@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SampleCompanyHRSystem
@@ -165,7 +158,8 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                UserHandler.logout();
+                //UserHandler.Logout();
+                Application.Exit();
             }
             catch (Exception ex)
             {
@@ -189,7 +183,7 @@ namespace SampleCompanyHRSystem
         {
             try
             {
-                FormHandler.openRecordTrainingAttendance();
+                FormHandler.openAddTrainingAttendance();
             }
             catch (Exception ex)
             {

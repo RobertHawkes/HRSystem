@@ -16,5 +16,30 @@ namespace SampleCompanyHRSystem
         {
             InitializeComponent();
         }
+
+        private void BtnYes_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //UserHandler.logout();
+                FormHandler.closeLogout();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
+
+        private void BtnNo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormHandler.closeLogout();
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.throwException(ex);
+            }
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace SampleCompanyHRSystem
         {
             InitializeComponent();
         }
+
+        private void FrmAddAnnualLeave_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

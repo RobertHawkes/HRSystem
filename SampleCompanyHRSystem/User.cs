@@ -12,6 +12,8 @@ namespace SampleCompanyHRSystem
         string username;
         string firstname;
         string surname;
+        string hash;
+        string salt;
         DateTime lastPasswordChange;
         int permissions;
 

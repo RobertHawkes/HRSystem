@@ -54,14 +54,16 @@
             this.mnuItemAddTrainingDate = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemRecordTrainingAttendance = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemEqualityComission = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviceUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewServiceUsersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.addServiceUserToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemReport = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.serviceUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewServiceUsersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.addServiceUserToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.picCompanyLogo = new System.Windows.Forms.PictureBox();
             this.mnuMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCompanyLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuMain
@@ -217,13 +219,13 @@
             // viewAreasToolStripMenuItem
             // 
             this.viewAreasToolStripMenuItem.Name = "viewAreasToolStripMenuItem";
-            this.viewAreasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewAreasToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.viewAreasToolStripMenuItem.Text = "View Areas";
             // 
             // editServicesToolStripMenuItem
             // 
             this.editServicesToolStripMenuItem.Name = "editServicesToolStripMenuItem";
-            this.editServicesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editServicesToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.editServicesToolStripMenuItem.Text = "Edit Services";
             // 
             // mnuItemTraining
@@ -233,27 +235,27 @@
             this.mnuItemAddTrainingDate,
             this.mnuItemRecordTrainingAttendance});
             this.mnuItemTraining.Name = "mnuItemTraining";
-            this.mnuItemTraining.Size = new System.Drawing.Size(62, 20);
+            this.mnuItemTraining.Size = new System.Drawing.Size(61, 20);
             this.mnuItemTraining.Text = "Training";
             // 
             // mnuItemViewTrainingRecords
             // 
             this.mnuItemViewTrainingRecords.Name = "mnuItemViewTrainingRecords";
-            this.mnuItemViewTrainingRecords.Size = new System.Drawing.Size(219, 22);
+            this.mnuItemViewTrainingRecords.Size = new System.Drawing.Size(218, 22);
             this.mnuItemViewTrainingRecords.Text = "View Training records";
             this.mnuItemViewTrainingRecords.Click += new System.EventHandler(this.MnuItemViewTrainingRecords_Click);
             // 
             // mnuItemAddTrainingDate
             // 
             this.mnuItemAddTrainingDate.Name = "mnuItemAddTrainingDate";
-            this.mnuItemAddTrainingDate.Size = new System.Drawing.Size(219, 22);
+            this.mnuItemAddTrainingDate.Size = new System.Drawing.Size(218, 22);
             this.mnuItemAddTrainingDate.Text = "Add Training date";
             this.mnuItemAddTrainingDate.Click += new System.EventHandler(this.mnuItemAddTrainingDate_Click);
             // 
             // mnuItemRecordTrainingAttendance
             // 
             this.mnuItemRecordTrainingAttendance.Name = "mnuItemRecordTrainingAttendance";
-            this.mnuItemRecordTrainingAttendance.Size = new System.Drawing.Size(219, 22);
+            this.mnuItemRecordTrainingAttendance.Size = new System.Drawing.Size(218, 22);
             this.mnuItemRecordTrainingAttendance.Text = "Record Training attendance";
             this.mnuItemRecordTrainingAttendance.Click += new System.EventHandler(this.mnuItemRecordTrainingAttendance_Click);
             // 
@@ -262,6 +264,27 @@
             this.mnuItemEqualityComission.Name = "mnuItemEqualityComission";
             this.mnuItemEqualityComission.Size = new System.Drawing.Size(131, 20);
             this.mnuItemEqualityComission.Text = "Equality Commission";
+            // 
+            // serviceUserToolStripMenuItem
+            // 
+            this.serviceUserToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewServiceUsersToolStripMenuItem1,
+            this.addServiceUserToolStripMenuItem1});
+            this.serviceUserToolStripMenuItem.Name = "serviceUserToolStripMenuItem";
+            this.serviceUserToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.serviceUserToolStripMenuItem.Text = "Service User";
+            // 
+            // viewServiceUsersToolStripMenuItem1
+            // 
+            this.viewServiceUsersToolStripMenuItem1.Name = "viewServiceUsersToolStripMenuItem1";
+            this.viewServiceUsersToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
+            this.viewServiceUsersToolStripMenuItem1.Text = "View Service Users";
+            // 
+            // addServiceUserToolStripMenuItem1
+            // 
+            this.addServiceUserToolStripMenuItem1.Name = "addServiceUserToolStripMenuItem1";
+            this.addServiceUserToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
+            this.addServiceUserToolStripMenuItem1.Text = "Add Service User";
             // 
             // mnuItemReport
             // 
@@ -291,32 +314,22 @@
             this.trainingToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.trainingToolStripMenuItem.Text = "Training";
             // 
-            // serviceUserToolStripMenuItem
+            // picCompanyLogo
             // 
-            this.serviceUserToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewServiceUsersToolStripMenuItem1,
-            this.addServiceUserToolStripMenuItem1});
-            this.serviceUserToolStripMenuItem.Name = "serviceUserToolStripMenuItem";
-            this.serviceUserToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
-            this.serviceUserToolStripMenuItem.Text = "Service User";
-            // 
-            // viewServiceUsersToolStripMenuItem1
-            // 
-            this.viewServiceUsersToolStripMenuItem1.Name = "viewServiceUsersToolStripMenuItem1";
-            this.viewServiceUsersToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.viewServiceUsersToolStripMenuItem1.Text = "View Service Users";
-            // 
-            // addServiceUserToolStripMenuItem1
-            // 
-            this.addServiceUserToolStripMenuItem1.Name = "addServiceUserToolStripMenuItem1";
-            this.addServiceUserToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.addServiceUserToolStripMenuItem1.Text = "Add Service User";
+            this.picCompanyLogo.Image = global::SampleCompanyHRSystem.Properties.Resources.HRIcon;
+            this.picCompanyLogo.Location = new System.Drawing.Point(609, 68);
+            this.picCompanyLogo.Name = "picCompanyLogo";
+            this.picCompanyLogo.Size = new System.Drawing.Size(54, 51);
+            this.picCompanyLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCompanyLogo.TabIndex = 3;
+            this.picCompanyLogo.TabStop = false;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.picCompanyLogo);
             this.Controls.Add(this.mnuMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
@@ -324,6 +337,7 @@
             this.Text = "HR System";
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCompanyLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,5 +376,6 @@
         private System.Windows.Forms.ToolStripMenuItem serviceUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewServiceUsersToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addServiceUserToolStripMenuItem1;
+        private System.Windows.Forms.PictureBox picCompanyLogo;
     }
 }
