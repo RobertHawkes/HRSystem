@@ -108,11 +108,17 @@
     <Compile Include="frmAssignEmployeeToService.Designer.cs">
       <DependentUpon>frmAssignEmployeeToService.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEmployee.cs">
+    <Compile Include="frmEmployeeFinance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEmployee.Designer.cs">
-      <DependentUpon>frmEmployee.cs</DependentUpon>
+    <Compile Include="frmEmployeeFinance.Designer.cs">
+      <DependentUpon>frmEmployeeFinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeHR.Designer.cs">
+      <DependentUpon>frmEmployeeHR.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmployeeLeaver.cs">
       <SubType>Form</SubType>
@@ -219,8 +225,11 @@
     <EmbeddedResource Include="frmAssignEmployeeToService.resx">
       <DependentUpon>frmAssignEmployeeToService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEmployee.resx">
-      <DependentUpon>frmEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="frmEmployeeFinance.resx">
+      <DependentUpon>frmEmployeeFinance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeHR.resx">
+      <DependentUpon>frmEmployeeHR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeLeaver.resx">
       <DependentUpon>frmEmployeeLeaver.cs</DependentUpon>

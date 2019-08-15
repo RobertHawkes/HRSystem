@@ -1,6 +1,6 @@
 ﻿namespace SampleCompanyHRSystem
 {
-    partial class frmEmployee
+    partial class frmEmployeeHR
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployee));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeHR));
             this.grpEmployeeImage = new System.Windows.Forms.GroupBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpload = new System.Windows.Forms.Button();
@@ -84,10 +84,12 @@
             this.grpContract = new System.Windows.Forms.GroupBox();
             this.dgvContract = new System.Windows.Forms.DataGridView();
             this.grpLeaver = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.chkLeaverConfirm = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.grpAppraisal = new System.Windows.Forms.GroupBox();
             this.dgvAppraisal = new System.Windows.Forms.DataGridView();
+            this.txtNINO = new System.Windows.Forms.TextBox();
+            this.lblNINO = new System.Windows.Forms.Label();
             this.grpEmployeeImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpEmployeeDetails.SuspendLayout();
@@ -119,7 +121,7 @@
             this.grpEmployeeImage.Controls.Add(this.pictureBox1);
             this.grpEmployeeImage.Location = new System.Drawing.Point(12, 12);
             this.grpEmployeeImage.Name = "grpEmployeeImage";
-            this.grpEmployeeImage.Size = new System.Drawing.Size(130, 253);
+            this.grpEmployeeImage.Size = new System.Drawing.Size(130, 270);
             this.grpEmployeeImage.TabIndex = 0;
             this.grpEmployeeImage.TabStop = false;
             this.grpEmployeeImage.Text = "Image";
@@ -135,7 +137,7 @@
             // 
             // btnUpload
             // 
-            this.btnUpload.Location = new System.Drawing.Point(6, 210);
+            this.btnUpload.Location = new System.Drawing.Point(3, 210);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(53, 23);
             this.btnUpload.TabIndex = 6;
@@ -152,6 +154,8 @@
             // 
             // grpEmployeeDetails
             // 
+            this.grpEmployeeDetails.Controls.Add(this.txtNINO);
+            this.grpEmployeeDetails.Controls.Add(this.lblNINO);
             this.grpEmployeeDetails.Controls.Add(this.mtbDOB);
             this.grpEmployeeDetails.Controls.Add(this.lblDOB);
             this.grpEmployeeDetails.Controls.Add(this.txtKnownAs);
@@ -170,14 +174,14 @@
             this.grpEmployeeDetails.Controls.Add(this.lblForename);
             this.grpEmployeeDetails.Location = new System.Drawing.Point(148, 12);
             this.grpEmployeeDetails.Name = "grpEmployeeDetails";
-            this.grpEmployeeDetails.Size = new System.Drawing.Size(194, 253);
+            this.grpEmployeeDetails.Size = new System.Drawing.Size(194, 275);
             this.grpEmployeeDetails.TabIndex = 1;
             this.grpEmployeeDetails.TabStop = false;
             this.grpEmployeeDetails.Text = "Details";
             // 
             // mtbDOB
             // 
-            this.mtbDOB.Location = new System.Drawing.Point(45, 219);
+            this.mtbDOB.Location = new System.Drawing.Point(45, 212);
             this.mtbDOB.Mask = "00/00/0000";
             this.mtbDOB.Name = "mtbDOB";
             this.mtbDOB.Size = new System.Drawing.Size(100, 20);
@@ -187,7 +191,7 @@
             // lblDOB
             // 
             this.lblDOB.AutoSize = true;
-            this.lblDOB.Location = new System.Drawing.Point(6, 222);
+            this.lblDOB.Location = new System.Drawing.Point(6, 215);
             this.lblDOB.Name = "lblDOB";
             this.lblDOB.Size = new System.Drawing.Size(33, 13);
             this.lblDOB.TabIndex = 14;
@@ -211,7 +215,7 @@
             // 
             // txtInitials
             // 
-            this.txtInitials.Location = new System.Drawing.Point(51, 187);
+            this.txtInitials.Location = new System.Drawing.Point(51, 180);
             this.txtInitials.Name = "txtInitials";
             this.txtInitials.Size = new System.Drawing.Size(100, 20);
             this.txtInitials.TabIndex = 11;
@@ -219,7 +223,7 @@
             // lblInitials
             // 
             this.lblInitials.AutoSize = true;
-            this.lblInitials.Location = new System.Drawing.Point(6, 190);
+            this.lblInitials.Location = new System.Drawing.Point(6, 183);
             this.lblInitials.Name = "lblInitials";
             this.lblInitials.Size = new System.Drawing.Size(39, 13);
             this.lblInitials.TabIndex = 10;
@@ -400,7 +404,7 @@
             this.grpBackground.Controls.Add(this.lblEthnicOrigin);
             this.grpBackground.Controls.Add(this.lblSex);
             this.grpBackground.Controls.Add(this.lblMartialStatus);
-            this.grpBackground.Location = new System.Drawing.Point(348, 253);
+            this.grpBackground.Location = new System.Drawing.Point(348, 270);
             this.grpBackground.Name = "grpBackground";
             this.grpBackground.Size = new System.Drawing.Size(235, 129);
             this.grpBackground.TabIndex = 4;
@@ -478,7 +482,7 @@
             // grpDisabled
             // 
             this.grpDisabled.Controls.Add(this.dgvDisability);
-            this.grpDisabled.Location = new System.Drawing.Point(589, 311);
+            this.grpDisabled.Location = new System.Drawing.Point(589, 328);
             this.grpDisabled.Name = "grpDisabled";
             this.grpDisabled.Size = new System.Drawing.Size(441, 87);
             this.grpDisabled.TabIndex = 5;
@@ -517,7 +521,7 @@
             // grpDisciplinary
             // 
             this.grpDisciplinary.Controls.Add(this.dgvDisciplinary);
-            this.grpDisciplinary.Location = new System.Drawing.Point(12, 271);
+            this.grpDisciplinary.Location = new System.Drawing.Point(12, 288);
             this.grpDisciplinary.Name = "grpDisciplinary";
             this.grpDisciplinary.Size = new System.Drawing.Size(330, 179);
             this.grpDisciplinary.TabIndex = 6;
@@ -537,7 +541,7 @@
             // 
             this.grpCommunity.Controls.Add(this.cmbCommunity);
             this.grpCommunity.Controls.Add(this.lblCommunity);
-            this.grpCommunity.Location = new System.Drawing.Point(348, 388);
+            this.grpCommunity.Location = new System.Drawing.Point(348, 405);
             this.grpCommunity.Name = "grpCommunity";
             this.grpCommunity.Size = new System.Drawing.Size(235, 62);
             this.grpCommunity.TabIndex = 7;
@@ -570,7 +574,7 @@
             // grpService
             // 
             this.grpService.Controls.Add(this.dgvService);
-            this.grpService.Location = new System.Drawing.Point(12, 456);
+            this.grpService.Location = new System.Drawing.Point(12, 473);
             this.grpService.Name = "grpService";
             this.grpService.Size = new System.Drawing.Size(571, 132);
             this.grpService.TabIndex = 8;
@@ -589,7 +593,7 @@
             // grpQualifications
             // 
             this.grpQualifications.Controls.Add(this.dgvQualification);
-            this.grpQualifications.Location = new System.Drawing.Point(592, 404);
+            this.grpQualifications.Location = new System.Drawing.Point(592, 421);
             this.grpQualifications.Name = "grpQualifications";
             this.grpQualifications.Size = new System.Drawing.Size(438, 181);
             this.grpQualifications.TabIndex = 6;
@@ -608,7 +612,7 @@
             // grpContract
             // 
             this.grpContract.Controls.Add(this.dgvContract);
-            this.grpContract.Location = new System.Drawing.Point(12, 594);
+            this.grpContract.Location = new System.Drawing.Point(12, 611);
             this.grpContract.Name = "grpContract";
             this.grpContract.Size = new System.Drawing.Size(832, 180);
             this.grpContract.TabIndex = 9;
@@ -628,21 +632,12 @@
             // 
             this.grpLeaver.Controls.Add(this.chkLeaverConfirm);
             this.grpLeaver.Controls.Add(this.button1);
-            this.grpLeaver.Location = new System.Drawing.Point(850, 594);
+            this.grpLeaver.Location = new System.Drawing.Point(850, 611);
             this.grpLeaver.Name = "grpLeaver";
             this.grpLeaver.Size = new System.Drawing.Size(180, 177);
             this.grpLeaver.TabIndex = 1;
             this.grpLeaver.TabStop = false;
             this.grpLeaver.Text = "Leaver";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(6, 117);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 54);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Process";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // chkLeaverConfirm
             // 
@@ -655,10 +650,19 @@
     " it will impact\r\non their use of the system and\r\nconforms with company policy\r\n";
             this.chkLeaverConfirm.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 117);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(168, 54);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Process";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // grpAppraisal
             // 
             this.grpAppraisal.Controls.Add(this.dgvAppraisal);
-            this.grpAppraisal.Location = new System.Drawing.Point(589, 164);
+            this.grpAppraisal.Location = new System.Drawing.Point(589, 181);
             this.grpAppraisal.Name = "grpAppraisal";
             this.grpAppraisal.Size = new System.Drawing.Size(441, 141);
             this.grpAppraisal.TabIndex = 10;
@@ -675,11 +679,27 @@
             this.dgvAppraisal.Size = new System.Drawing.Size(435, 122);
             this.dgvAppraisal.TabIndex = 0;
             // 
-            // frmEmployee
+            // txtNINO
+            // 
+            this.txtNINO.Location = new System.Drawing.Point(51, 243);
+            this.txtNINO.Name = "txtNINO";
+            this.txtNINO.Size = new System.Drawing.Size(100, 20);
+            this.txtNINO.TabIndex = 17;
+            // 
+            // lblNINO
+            // 
+            this.lblNINO.AutoSize = true;
+            this.lblNINO.Location = new System.Drawing.Point(6, 246);
+            this.lblNINO.Name = "lblNINO";
+            this.lblNINO.Size = new System.Drawing.Size(38, 13);
+            this.lblNINO.TabIndex = 16;
+            this.lblNINO.Text = "NI No:";
+            // 
+            // frmEmployeeHR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 786);
+            this.ClientSize = new System.Drawing.Size(1042, 828);
             this.Controls.Add(this.grpAppraisal);
             this.Controls.Add(this.grpLeaver);
             this.Controls.Add(this.grpContract);
@@ -695,9 +715,9 @@
             this.Controls.Add(this.grpEmployeeDetails);
             this.Controls.Add(this.grpEmployeeImage);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmEmployee";
+            this.Name = "frmEmployeeHR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Employee";
+            this.Text = "Employee - HR";
             this.Load += new System.EventHandler(this.FrmEmployee_Load);
             this.grpEmployeeImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -792,5 +812,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox grpAppraisal;
         private System.Windows.Forms.DataGridView dgvAppraisal;
+        private System.Windows.Forms.TextBox txtNINO;
+        private System.Windows.Forms.Label lblNINO;
     }
 }
