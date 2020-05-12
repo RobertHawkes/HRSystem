@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleCompanyHRSystem", "SampleCompanyHRSystem\SampleCompanyHRSystem.csproj", "{D6AFBC02-CEB7-4813-A62E-9788F873C87D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRSystem", "SampleCompanyHRSystem\HRSystem.csproj", "{D6AFBC02-CEB7-4813-A62E-9788F873C87D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
